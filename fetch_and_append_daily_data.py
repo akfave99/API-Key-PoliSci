@@ -4,7 +4,7 @@ from openpyxl import load_workbook
 from datetime import datetime
 
 # Your Data.gov API key
-data_gov_api_key = "pmGBCBa9Qfkawa1E1xhh7pxWkAN2kaboD4vK04n0"
+data_gov_api_key = ""
 
 # API endpoint for package_search
 data_gov_url = "https://catalog.data.gov/api/3/action/package_search"
@@ -89,7 +89,7 @@ with pd.ExcelWriter(excel_path, engine='openpyxl', mode='a', if_sheet_exists='re
     print("FEC candidate data written to 'FEC_Candidates' sheet.")
 
 # --- Census API Integration ---
-census_api_key = "7c5962b163e1b18fa334f17b80a42fa5d0b361ff"
+census_api_key = "'
 census_base_url = "https://api.census.gov/data/2020/dec/pl"
 census_params = {
     "get": "NAME,P1_001N",  # Example: get place name and total population
